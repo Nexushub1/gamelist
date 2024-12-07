@@ -1,0 +1,6 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nexushub1/gamelist/refs/heads/main/loaddergame.lua"))()
+for PlaceID, Execute in pairs(NameGame) do
+    if PlaceID == game.PlaceId then
+        loadstring(game:HttpGet(Execute))()
+    end
+end
